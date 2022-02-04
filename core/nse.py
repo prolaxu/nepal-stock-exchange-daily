@@ -1,7 +1,6 @@
 import requests
 import json
 import datetime
-import nepali_datetime
 import os
 from openpyxl import Workbook
 import csv
@@ -74,8 +73,7 @@ class NSE:
                 """
 
     def todaysdate(self):
-        datetime.date.today()
-        return str(nepali_datetime.date.today())
+        return str(datetime.date.today())
 
     def check_internet(self):
         url = "https://www.google.com"

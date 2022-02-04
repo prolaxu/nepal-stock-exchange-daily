@@ -5,7 +5,7 @@ from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtWidgets import QApplication, QFileDialog
 from PyQt5 import QtGui
 from core.render import Render
-import nepali_datetime
+import datetime
 import shutil
 from core.nse import NSE
 
@@ -59,7 +59,7 @@ class WebView(QWebEngineView):
         error = False
         extension = ''
         content = ''
-        dt = nepali_datetime.datetime.now()
+        dt = datetime.datetime.now()
         if(type == "excel"):
             extension = '.xlsx'
             file_filter = 'Excel File (*.xlsx)'
