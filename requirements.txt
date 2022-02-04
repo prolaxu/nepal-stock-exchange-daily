@@ -1,0 +1,5 @@
+PyQt5
+PyQtWebEngine
+openpyxl
+requests
+nepali_datetime
